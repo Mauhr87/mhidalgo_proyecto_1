@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto 1 - Utilities</title>
+</head>
+
+<body>
+    <main>
+        <nav id="main-menu-bootstrap" class="main-menu-bootstrap flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="index.html">
+                <span class="fs-5 fw-semibold">PROJECTO 1</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#grid-breakpoints-menu" aria-expanded="false">
+                  Grid - Breakpoints
+                </button>
+                <div class="collapse" id="grid-breakpoints-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="index.html#breakpoints" class="link-dark rounded">Breakpoints</a></li>
+                    <li><a href="index.html#containers" class="link-dark rounded">Containers</a></li>
+                    <li><a href="index.html#grid" class="link-dark rounded">Grid</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#columns-gutters-menu" aria-expanded="false">
+                  Column - Gutters
+                </button>
+                <div class="collapse" id="columns-gutters-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="columns-gutters.html#columns" class="link-dark rounded">Columns</a></li>
+                    <li><a href="columns-gutters.html#gutters" class="link-dark rounded">Gutters</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#text-images-menu" aria-expanded="false">
+                  Text - Images
+                </button>
+                <div class="collapse" id="text-images-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="text-images.html#typography" class="link-dark rounded">Typography</a></li>
+                    <li><a href="text-images.html#image" class="link-dark rounded">Image</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#tables-menu" aria-expanded="false">
+                  Tables
+                </button>
+                <div class="collapse" id="tables-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#tables" class="link-dark rounded">Tables</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-menu" aria-expanded="false">
+                  Forms
+                </button>
+                <div class="collapse" id="forms-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="forms.html#forms-overview" class="link-dark rounded">Overview</a></li>
+                    <li><a href="forms.html#forms-form-control" class="link-dark rounded">Form Control</a></li>
+                    <li><a href="forms.html#forms-select" class="link-dark rounded">Select</a></li>
+                    <li><a href="forms.html#forms-checks-radios" class="link-dark rounded">Checks & radios</a></li>
+                    <li><a href="forms.html#forms-range" class="link-dark rounded">Range</a></li>
+                    <li><a href="forms.html#forms-input-group" class="link-dark rounded">Input group</a></li>
+                    <li><a href="forms.html#forms-floating-labels" class="link-dark rounded">Floating labels</a></li>
+                    <li><a href="forms.html#forms-layout" class="link-dark rounded">Layout</a></li>
+                    <li><a href="forms.html#forms-validation" class="link-dark rounded">Validation</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-menu" aria-expanded="true">
+                  Utilities
+                </button>
+                <div class="collapse show" id="utilities-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#utilities-background" class="link-dark rounded">Background</a></li>
+                    <li><a href="#utilities-border" class="link-dark rounded">Border</a></li>
+                    <li><a href="#utilities-colors" class="link-dark rounded">Colors</a></li>
+                    <li><a href="#utilities-display" class="link-dark rounded">Display</a></li>
+                    <li><a href="#utilities-flex" class="link-dark rounded">Flex</a></li>
+                    <li><a href="#utilities-float" class="link-dark rounded">Float</a></li>
+                    <li><a href="#utilities-interactions" class="link-dark rounded">Interactions</a></li>
+                    <li><a href="#utilities-overflow" class="link-dark rounded">Overflow</a></li>
+                    <li><a href="#utilities-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="#utilities-shadows" class="link-dark rounded">Shadows</a></li>
+                    <li><a href="#utilities-sizing" class="link-dark rounded">Sizing</a></li>
+                    <li><a href="#utilities-spacing" class="link-dark rounded">Spacing</a></li>
+                    <li><a href="#utilities-text" class="link-dark rounded">Text</a></li>
+                    <li><a href="#utilities-vertical-alignment" class="link-dark rounded">Vertical align</a></li>
+                    <li><a href="#utilities-visibility" class="link-dark rounded">Visibility</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-menu" aria-expanded="false">
+                  Helpers
+                </button>
+                <div class="collapse" id="helpers-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="helpers.html#helpers-clearfix" class="link-dark rounded">Clearfix</a></li>
+                    <li><a href="helpers.html#helpers-colored-links" class="link-dark rounded">Colored links</a></li>
+                    <li><a href="helpers.html#helpers-ratios" class="link-dark rounded">Ratio</a></li>
+                    <li><a href="helpers.html#helpers-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="helpers.html#helpers-visually-hidden" class="link-dark rounded">Visually hidden</a></li>
+                    <li><a href="helpers.html#helpers-stretched-link" class="link-dark rounded">Stretched link</a></li>
+                    <li><a href="helpers.html#helpers-text-truncation" class="link-dark rounded">Text truncation</a></li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#main-menu-bootstrap" data-bs-offset="0" tabindex="0"
+            class="content-wrapper p-5">
+            <section id="utilities-background" class="mb-5">
+                <h1>Background</h1>
+                
+                <p class="bd-lead">Convey meaning through <code>background-color</code> and add decoration with gradients.</p>
+
+                <h2>Background color</h2>
+
+                <p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities <strong>do not set <code>color</code></strong>, so in some cases you’ll want to use <code>.text-*</code>.</p>
+
+                <div class="bd-example mb-4">
+                    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                    <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                    <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                </div>
+
+                <h2>Background gradient</h2>
+
+                <p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
+
+                <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary.bg-gradient</div>
+                <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary.bg-gradient</div>
+                <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success.bg-gradient</div>
+                <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger.bg-gradient</div>
+                <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning.bg-gradient</div>
+                <div class="p-3 mb-2 bg-info bg-gradient text-dark">.bg-info.bg-gradient</div>
+                <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light.bg-gradient</div>
+                <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark.bg-gradient</div>
+
+            </section>
+
+            <section id="utilities-border" class="mb-5">
+
+                <h1>Borders</h1>
+
+                <p class="bd-lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+
+                <h2>Border</h2>
+
+                <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
+            
+                <h3>Additive</h3>
+
+                <div class="bd-example bd-example-border-utils">
+                    <span class="border"></span>
+                    <span class="border-top"></span>
+                    <span class="border-end"></span>
+                    <span class="border-bottom"></span>
+                    <span class="border-start"></span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-top"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-end"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-bottom"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-start"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Subtractive</h3>
+
+                <div class="bd-example bd-example-border-utils bd-example-border-utils-0">
+                    <span class="border-0"></span>
+                    <span class="border-top-0"></span>
+                    <span class="border-end-0"></span>
+                    <span class="border-bottom-0"></span>
+                    <span class="border-start-0"></span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-0"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-top-0"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-end-0"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-bottom-0"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-start-0"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Border color</h3>
+
+                <p>Change the border color using utilities built on our theme colors.</p>
+
+                <div class="bd-example bd-example-border-utils">
+                    <span class="border border-primary"></span>
+                    <span class="border border-secondary"></span>
+                    <span class="border border-success"></span>
+                    <span class="border border-danger"></span>
+                    <span class="border border-warning"></span>
+                    <span class="border border-info"></span>
+                    <span class="border border-light"></span>
+                    <span class="border border-dark"></span>
+                    <span class="border border-white"></span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-primary"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-secondary"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-success"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-danger"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-warning"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-info"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-light"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-dark"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-white"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Border-width</h3>
+
+                <div class="bd-example bd-example-border-utils">
+                    <span class="border border-1"></span>
+                    <span class="border border-2"></span>
+                    <span class="border border-3"></span>
+                    <span class="border border-4"></span>
+                    <span class="border border-5"></span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-1"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-2"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-3"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-4"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-5"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Border-radius</h3>
+
+                <div class="bd-example bd-example-rounded-utils">
+                    <svg class="bd-placeholder-img rounded" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-top" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example top rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example top rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-end" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example right rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example right rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-bottom" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example bottom rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example bottom rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-start" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example left rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example left rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-circle" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Completely round image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Completely round image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-pill" width="150" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rounded pill image: 150x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Rounded pill image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">150x75</text></svg>
+                    
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-end"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-bottom"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-start"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-pill"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Sizes</h3>
+                
+                <p>Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>3</code>, and can be configured by modifying the utilities API.</p>
+
+                <div class="bd-example bd-example-rounded-utils">
+                    <svg class="bd-placeholder-img rounded-0" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example non-rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example non-rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-1" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example small rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example small rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-2" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example default rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example default rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                    <svg class="bd-placeholder-img rounded-3" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example large rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example large rounded image</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-0"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-1"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-2"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"rounded-3"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-colors" class="mb-5">
+
+                <h1>Colors</h1>
+
+                <p class="bd-lead">Convey meaning through <code>color</code> with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
+
+                <div class="bd-example">
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning bg-dark">.text-warning</p>
+                    <p class="text-info bg-dark">.text-info</p>
+                    <p class="text-light bg-dark">.text-light</p>
+                    <p class="text-dark">.text-dark</p>
+                    <p class="text-body">.text-body</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white bg-dark">.text-white</p>
+                    <p class="text-black-50">.text-black-50</p>
+                    <p class="text-white-50 bg-dark">.text-white-50</p>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-primary"</span><span class="p">&gt;</span>.text-primary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-secondary"</span><span class="p">&gt;</span>.text-secondary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-success"</span><span class="p">&gt;</span>.text-success<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-danger"</span><span class="p">&gt;</span>.text-danger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-warning bg-dark"</span><span class="p">&gt;</span>.text-warning<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-info bg-dark"</span><span class="p">&gt;</span>.text-info<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-light bg-dark"</span><span class="p">&gt;</span>.text-light<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-dark"</span><span class="p">&gt;</span>.text-dark<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-body"</span><span class="p">&gt;</span>.text-body<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>.text-muted<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white bg-dark"</span><span class="p">&gt;</span>.text-white<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-black-50"</span><span class="p">&gt;</span>.text-black-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white-50 bg-dark"</span><span class="p">&gt;</span>.text-white-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-display" class="mb-5">
+
+                <h1>Display property</h1>
+
+                <p class="bd-lead">Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.</p>
+
+                <h2>Examples</h2>
+
+                <div class="bd-example">
+                    <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+                    <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+                </div>
+
+                <div class="highlight mb-4"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-inline p-2 bg-primary text-white"</span><span class="p">&gt;</span>d-inline<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-inline p-2 bg-dark text-white"</span><span class="p">&gt;</span>d-inline<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <span class="d-block p-2 bg-primary text-white">d-block</span>
+                    <span class="d-block p-2 bg-dark text-white">d-block</span>
+                </div>
+
+                <div class="highlight mb-4"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-block p-2 bg-primary text-white"</span><span class="p">&gt;</span>d-block<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-block p-2 bg-dark text-white"</span><span class="p">&gt;</span>d-block<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Hiding elements</h2>
+
+                <table class="table mb-4">
+                    <thead>
+                      <tr>
+                        <th>Screen size</th>
+                        <th>Class</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Hidden on all</td>
+                        <td><code>.d-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on xs</td>
+                        <td><code>.d-none .d-sm-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on sm</td>
+                        <td><code>.d-sm-none .d-md-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on md</td>
+                        <td><code>.d-md-none .d-lg-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on lg</td>
+                        <td><code>.d-lg-none .d-xl-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on xl</td>
+                        <td><code>.d-xl-none .d-xxl-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Hidden only on xxl</td>
+                        <td><code>.d-xxl-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible on all</td>
+                        <td><code>.d-block</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on xs</td>
+                        <td><code>.d-block .d-sm-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on sm</td>
+                        <td><code>.d-none .d-sm-block .d-md-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on md</td>
+                        <td><code>.d-none .d-md-block .d-lg-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on lg</td>
+                        <td><code>.d-none .d-lg-block .d-xl-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on xl</td>
+                        <td><code>.d-none .d-xl-block .d-xxl-none</code></td>
+                      </tr>
+                      <tr>
+                        <td>Visible only on xxl</td>
+                        <td><code>.d-none .d-xxl-block</code></td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <h2>Display in print</h2>
+
+                <ul class="mb-4">
+                    <li><code>.d-print-none</code></li>
+                    <li><code>.d-print-inline</code></li>
+                    <li><code>.d-print-inline-block</code></li>
+                    <li><code>.d-print-block</code></li>
+                    <li><code>.d-print-grid</code></li>
+                    <li><code>.d-print-table</code></li>
+                    <li><code>.d-print-table-row</code></li>
+                    <li><code>.d-print-table-cell</code></li>
+                    <li><code>.d-print-flex</code></li>
+                    <li><code>.d-print-inline-flex</code></li>
+                </ul>
+
+                <div class="bd-example">
+                    <div class="d-print-none">Screen Only (Hide on print only)</div>
+                    <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+                    <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-print-none"</span><span class="p">&gt;</span>Screen Only (Hide on print only)<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-none d-print-block"</span><span class="p">&gt;</span>Print Only (Hide on screen only)<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-none d-lg-block d-print-block"</span><span class="p">&gt;</span>Hide up to large on screen, but always show on print<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-flex">
+
+                <h1>Flex</h1>
+
+                <p class="bd-lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+
+                <h2>Enable flex behaviors</h2>
+
+                <p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex p-2 bd-highlight"</span><span class="p">&gt;</span>I'm a flexbox container!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-inline-flex p-2 bd-highlight"</span><span class="p">&gt;</span>I'm an inline flexbox container!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
+
+                <ul>
+                    <li><code>.d-flex</code></li>
+                    <li><code>.d-inline-flex</code></li>
+                    <li><code>.d-sm-flex</code></li>
+                    <li><code>.d-sm-inline-flex</code></li>
+                    <li><code>.d-md-flex</code></li>
+                    <li><code>.d-md-inline-flex</code></li>
+                    <li><code>.d-lg-flex</code></li>
+                    <li><code>.d-lg-inline-flex</code></li>
+                    <li><code>.d-xl-flex</code></li>
+                    <li><code>.d-xl-inline-flex</code></li>
+                    <li><code>.d-xxl-flex</code></li>
+                    <li><code>.d-xxl-inline-flex</code></li>
+                </ul>
+
+                <h2>Direction</h2>
+
+                <p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item 1</div>
+                      <div class="p-2 bd-highlight">Flex item 2</div>
+                      <div class="p-2 bd-highlight">Flex item 3</div>
+                    </div>
+                    <div class="d-flex flex-row-reverse bd-highlight">
+                      <div class="p-2 bd-highlight">Flex item 1</div>
+                      <div class="p-2 bd-highlight">Flex item 2</div>
+                      <div class="p-2 bd-highlight">Flex item 3</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-row bd-highlight mb-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-row-reverse bd-highlight"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item 1</div>
+                      <div class="p-2 bd-highlight">Flex item 2</div>
+                      <div class="p-2 bd-highlight">Flex item 3</div>
+                    </div>
+                    <div class="d-flex flex-column-reverse bd-highlight">
+                      <div class="p-2 bd-highlight">Flex item 1</div>
+                      <div class="p-2 bd-highlight">Flex item 2</div>
+                      <div class="p-2 bd-highlight">Flex item 3</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-column bd-highlight mb-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-column-reverse bd-highlight"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>flex-direction</code>.</p>
+
+                <ul class="mb-4">
+                    <li><code>.flex-row</code></li>
+                    <li><code>.flex-row-reverse</code></li>
+                    <li><code>.flex-column</code></li>
+                    <li><code>.flex-column-reverse</code></li>
+                    <li><code>.flex-sm-row</code></li>
+                    <li><code>.flex-sm-row-reverse</code></li>
+                    <li><code>.flex-sm-column</code></li>
+                    <li><code>.flex-sm-column-reverse</code></li>
+                    <li><code>.flex-md-row</code></li>
+                    <li><code>.flex-md-row-reverse</code></li>
+                    <li><code>.flex-md-column</code></li>
+                    <li><code>.flex-md-column-reverse</code></li>
+                    <li><code>.flex-lg-row</code></li>
+                    <li><code>.flex-lg-row-reverse</code></li>
+                    <li><code>.flex-lg-column</code></li>
+                    <li><code>.flex-lg-column-reverse</code></li>
+                    <li><code>.flex-xl-row</code></li>
+                    <li><code>.flex-xl-row-reverse</code></li>
+                    <li><code>.flex-xl-column</code></li>
+                    <li><code>.flex-xl-column-reverse</code></li>
+                    <li><code>.flex-xxl-row</code></li>
+                    <li><code>.flex-xxl-row-reverse</code></li>
+                    <li><code>.flex-xxl-column</code></li>
+                    <li><code>.flex-xxl-column-reverse</code></li>
+                </ul>
+
+                <h2>Justify content</h2>
+
+                <p>Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>evenly</code>.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex justify-content-start bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex justify-content-end bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex justify-content-center bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex justify-content-around bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex justify-content-evenly bd-highlight">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-start"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-end"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-center"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-between"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-around"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-evenly"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>justify-content</code>.</p>
+
+                <ul>
+                    <li><code>.justify-content-start</code></li>
+                    <li><code>.justify-content-end</code></li>
+                    <li><code>.justify-content-center</code></li>
+                    <li><code>.justify-content-between</code></li>
+                    <li><code>.justify-content-around</code></li>
+                    <li><code>.justify-content-evenly</code></li>
+                    <li><code>.justify-content-sm-start</code></li>
+                    <li><code>.justify-content-sm-end</code></li>
+                    <li><code>.justify-content-sm-center</code></li>
+                    <li><code>.justify-content-sm-between</code></li>
+                    <li><code>.justify-content-sm-around</code></li>
+                    <li><code>.justify-content-sm-evenly</code></li>
+                    <li><code>.justify-content-md-start</code></li>
+                    <li><code>.justify-content-md-end</code></li>
+                    <li><code>.justify-content-md-center</code></li>
+                    <li><code>.justify-content-md-between</code></li>
+                    <li><code>.justify-content-md-around</code></li>
+                    <li><code>.justify-content-md-evenly</code></li>
+                    <li><code>.justify-content-lg-start</code></li>
+                    <li><code>.justify-content-lg-end</code></li>
+                    <li><code>.justify-content-lg-center</code></li>
+                    <li><code>.justify-content-lg-between</code></li>
+                    <li><code>.justify-content-lg-around</code></li>
+                    <li><code>.justify-content-lg-evenly</code></li>
+                    <li><code>.justify-content-xl-start</code></li>
+                    <li><code>.justify-content-xl-end</code></li>
+                    <li><code>.justify-content-xl-center</code></li>
+                    <li><code>.justify-content-xl-between</code></li>
+                    <li><code>.justify-content-xl-around</code></li>
+                    <li><code>.justify-content-xl-evenly</code></li>
+                    <li><code>.justify-content-xxl-start</code></li>
+                    <li><code>.justify-content-xxl-end</code></li>
+                    <li><code>.justify-content-xxl-center</code></li>
+                    <li><code>.justify-content-xxl-between</code></li>
+                    <li><code>.justify-content-xxl-around</code></li>
+                    <li><code>.justify-content-xxl-evenly</code></li>
+                </ul>
+
+                <h2>Align items</h2>
+
+                <p>Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
+
+                <div class="bd-example">
+                    <div class="d-flex align-items-start bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex align-items-end bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex align-items-center bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex align-items-baseline bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex align-items-stretch bd-highlight" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-start"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-end"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-center"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-baseline"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-stretch"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>align-items</code>.</p>
+
+                <ul>
+                    <li><code>.align-items-start</code></li>
+                    <li><code>.align-items-end</code></li>
+                    <li><code>.align-items-center</code></li>
+                    <li><code>.align-items-baseline</code></li>
+                    <li><code>.align-items-stretch</code></li>
+                    <li><code>.align-items-sm-start</code></li>
+                    <li><code>.align-items-sm-end</code></li>
+                    <li><code>.align-items-sm-center</code></li>
+                    <li><code>.align-items-sm-baseline</code></li>
+                    <li><code>.align-items-sm-stretch</code></li>
+                    <li><code>.align-items-md-start</code></li>
+                    <li><code>.align-items-md-end</code></li>
+                    <li><code>.align-items-md-center</code></li>
+                    <li><code>.align-items-md-baseline</code></li>
+                    <li><code>.align-items-md-stretch</code></li>
+                    <li><code>.align-items-lg-start</code></li>
+                    <li><code>.align-items-lg-end</code></li>
+                    <li><code>.align-items-lg-center</code></li>
+                    <li><code>.align-items-lg-baseline</code></li>
+                    <li><code>.align-items-lg-stretch</code></li>
+                    <li><code>.align-items-xl-start</code></li>
+                    <li><code>.align-items-xl-end</code></li>
+                    <li><code>.align-items-xl-center</code></li>
+                    <li><code>.align-items-xl-baseline</code></li>
+                    <li><code>.align-items-xl-stretch</code></li>
+                    <li><code>.align-items-xxl-start</code></li>
+                    <li><code>.align-items-xxl-end</code></li>
+                    <li><code>.align-items-xxl-center</code></li>
+                    <li><code>.align-items-xxl-baseline</code></li>
+                    <li><code>.align-items-xxl-stretch</code></li>
+                </ul>
+
+                <h2>Align self</h2>
+
+                <p>Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as <code>align-items</code>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
+
+                <div class="bd-example">
+                    <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="align-self-start p-2 bd-highlight">Aligned flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="align-self-end p-2 bd-highlight">Aligned flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="align-self-center p-2 bd-highlight">Aligned flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="align-self-baseline p-2 bd-highlight">Aligned flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    <div class="d-flex bd-highlight" style="height: 100px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="align-self-stretch p-2 bd-highlight">Aligned flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-self-start"</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-self-end"</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-self-center"</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-self-baseline"</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-self-stretch"</span><span class="p">&gt;</span>Aligned flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>align-self</code>.</p>
+
+                <ul>
+                    <li><code>.align-self-start</code></li>
+                    <li><code>.align-self-end</code></li>
+                    <li><code>.align-self-center</code></li>
+                    <li><code>.align-self-baseline</code></li>
+                    <li><code>.align-self-stretch</code></li>
+                    <li><code>.align-self-sm-start</code></li>
+                    <li><code>.align-self-sm-end</code></li>
+                    <li><code>.align-self-sm-center</code></li>
+                    <li><code>.align-self-sm-baseline</code></li>
+                    <li><code>.align-self-sm-stretch</code></li>
+                    <li><code>.align-self-md-start</code></li>
+                    <li><code>.align-self-md-end</code></li>
+                    <li><code>.align-self-md-center</code></li>
+                    <li><code>.align-self-md-baseline</code></li>
+                    <li><code>.align-self-md-stretch</code></li>
+                    <li><code>.align-self-lg-start</code></li>
+                    <li><code>.align-self-lg-end</code></li>
+                    <li><code>.align-self-lg-center</code></li>
+                    <li><code>.align-self-lg-baseline</code></li>
+                    <li><code>.align-self-lg-stretch</code></li>
+                    <li><code>.align-self-xl-start</code></li>
+                    <li><code>.align-self-xl-end</code></li>
+                    <li><code>.align-self-xl-center</code></li>
+                    <li><code>.align-self-xl-baseline</code></li>
+                    <li><code>.align-self-xl-stretch</code></li>
+                    <li><code>.align-self-xxl-start</code></li>
+                    <li><code>.align-self-xxl-end</code></li>
+                    <li><code>.align-self-xxl-center</code></li>
+                    <li><code>.align-self-xxl-baseline</code></li>
+                    <li><code>.align-self-xxl-stretch</code></li>
+                </ul>
+
+                <h2>Fill</h2>
+
+                <p>Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex bd-highlight">
+                      <div class="p-2 flex-fill bd-highlight">Flex item with a lot of content</div>
+                      <div class="p-2 flex-fill bd-highlight">Flex item</div>
+                      <div class="p-2 flex-fill bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="p">&gt;</span>Flex item with a lot of content<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>flex-fill</code>.</p>
+
+                <ul>
+                    <li><code>.flex-fill</code></li>
+                    <li><code>.flex-sm-fill</code></li>
+                    <li><code>.flex-md-fill</code></li>
+                    <li><code>.flex-lg-fill</code></li>
+                    <li><code>.flex-xl-fill</code></li>
+                    <li><code>.flex-xxl-fill</code></li>
+                </ul>
+
+                <h2>Grow and shrink</h2>
+
+                <p>Use <code>.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex bd-highlight">
+                      <div class="p-2 flex-grow-1 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Third flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 flex-grow-1 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Third flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex bd-highlight">
+                      <div class="p-2 w-100 bd-highlight">Flex item</div>
+                      <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 w-100 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 flex-shrink-1 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Auto margins</h2>
+
+                <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).</p>
+
+                <div class="bd-example">
+                    <div class="d-flex bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    
+                    <div class="d-flex bd-highlight mb-3">
+                      <div class="me-auto p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    
+                    <div class="d-flex bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="ms-auto p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"me-auto p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex bd-highlight mb-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ms-auto p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>With align-items</h2>
+
+                <p>Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column</code>, and <code>margin-top: auto</code> or <code>margin-bottom: auto</code>.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
+                      <div class="mb-auto p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                    
+                    <div class="d-flex align-items-end flex-column bd-highlight mb-3" style="height: 200px;">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="mt-auto p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-start flex-column bd-highlight mb-3"</span> <span class="na">style</span><span class="o">=</span><span class="s">"height: 200px;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-auto p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-end flex-column bd-highlight mb-3"</span> <span class="na">style</span><span class="o">=</span><span class="s">"height: 200px;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mt-auto p-2 bd-highlight"</span><span class="p">&gt;</span>Flex item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Wrap</h2>
+
+                <p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code>.flex-nowrap</code>, wrapping with <code>.flex-wrap</code>, or reverse wrapping with <code>.flex-wrap-reverse</code>.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-nowrap bd-highlight" style="width: 8rem;">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-wrap bd-highlight">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-wrap-reverse bd-highlight">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <p>Responsive variations also exist for <code>flex-wrap</code>.</p>
+
+                <ul>
+                    <li><code>.flex-nowrap</code></li>
+                    <li><code>.flex-wrap</code></li>
+                    <li><code>.flex-wrap-reverse</code></li>
+                    <li><code>.flex-sm-nowrap</code></li>
+                    <li><code>.flex-sm-wrap</code></li>
+                    <li><code>.flex-sm-wrap-reverse</code></li>
+                    <li><code>.flex-md-nowrap</code></li>
+                    <li><code>.flex-md-wrap</code></li>
+                    <li><code>.flex-md-wrap-reverse</code></li>
+                    <li><code>.flex-lg-nowrap</code></li>
+                    <li><code>.flex-lg-wrap</code></li>
+                    <li><code>.flex-lg-wrap-reverse</code></li>
+                    <li><code>.flex-xl-nowrap</code></li>
+                    <li><code>.flex-xl-wrap</code></li>
+                    <li><code>.flex-xl-wrap-reverse</code></li>
+                    <li><code>.flex-xxl-nowrap</code></li>
+                    <li><code>.flex-xxl-wrap</code></li>
+                    <li><code>.flex-xxl-wrap-reverse</code></li>
+                </ul>
+
+                <h2>Order</h2>
+
+                <div class="bd-example">
+                    <div class="d-flex flex-nowrap bd-highlight">
+                      <div class="order-3 p-2 bd-highlight">First flex item</div>
+                      <div class="order-2 p-2 bd-highlight">Second flex item</div>
+                      <div class="order-1 p-2 bd-highlight">Third flex item</div>
+                    </div>
+                </div>
+
+                <p>Responsive variations also exist for <code>order</code>.</p>
+
+                <ul>
+                    <li><code>.order-0</code></li>
+                    <li><code>.order-1</code></li>
+                    <li><code>.order-2</code></li>
+                    <li><code>.order-3</code></li>
+                    <li><code>.order-4</code></li>
+                    <li><code>.order-5</code></li>
+                    <li><code>.order-sm-0</code></li>
+                    <li><code>.order-sm-1</code></li>
+                    <li><code>.order-sm-2</code></li>
+                    <li><code>.order-sm-3</code></li>
+                    <li><code>.order-sm-4</code></li>
+                    <li><code>.order-sm-5</code></li>
+                    <li><code>.order-md-0</code></li>
+                    <li><code>.order-md-1</code></li>
+                    <li><code>.order-md-2</code></li>
+                    <li><code>.order-md-3</code></li>
+                    <li><code>.order-md-4</code></li>
+                    <li><code>.order-md-5</code></li>
+                    <li><code>.order-lg-0</code></li>
+                    <li><code>.order-lg-1</code></li>
+                    <li><code>.order-lg-2</code></li>
+                    <li><code>.order-lg-3</code></li>
+                    <li><code>.order-lg-4</code></li>
+                    <li><code>.order-lg-5</code></li>
+                    <li><code>.order-xl-0</code></li>
+                    <li><code>.order-xl-1</code></li>
+                    <li><code>.order-xl-2</code></li>
+                    <li><code>.order-xl-3</code></li>
+                    <li><code>.order-xl-4</code></li>
+                    <li><code>.order-xl-5</code></li>
+                    <li><code>.order-xxl-0</code></li>
+                    <li><code>.order-xxl-1</code></li>
+                    <li><code>.order-xxl-2</code></li>
+                    <li><code>.order-xxl-3</code></li>
+                    <li><code>.order-xxl-4</code></li>
+                    <li><code>.order-xxl-5</code></li>
+                </ul>
+
+                <p>Additionally there are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively.</p>
+
+                <ul>
+                    <li><code>.order-first</code></li>
+                    <li><code>.order-last</code></li>
+                    <li><code>.order-sm-first</code></li>
+                    <li><code>.order-sm-last</code></li>
+                    <li><code>.order-md-first</code></li>
+                    <li><code>.order-md-last</code></li>
+                    <li><code>.order-lg-first</code></li>
+                    <li><code>.order-lg-last</code></li>
+                    <li><code>.order-xl-first</code></li>
+                    <li><code>.order-xl-last</code></li>
+                    <li><code>.order-xxl-first</code></li>
+                    <li><code>.order-xxl-last</code></li>
+                </ul>
+
+                <h2>Align content</h2>
+
+                <p>Use <code>align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we’ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items.</p>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-start flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-start flex-wrap"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-end flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-end flex-wrap"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-center flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-center flex-wrap"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-between flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-between flex-wrap"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-around flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-around flex-wrap"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <div class="d-flex align-content-stretch flex-wrap bd-highlight mb-3" style="height: 200px">
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                      <div class="p-2 bd-highlight">Flex item</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-content-stretch flex-wrap"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <p>Responsive variations also exist for <code>align-content</code>.</p>
+
+                <ul>
+                    <li><code>.align-content-start</code></li>
+                    <li><code>.align-content-end</code></li>
+                    <li><code>.align-content-center</code></li>
+                    <li><code>.align-content-around</code></li>
+                    <li><code>.align-content-stretch</code></li>
+                    <li><code>.align-content-sm-start</code></li>
+                    <li><code>.align-content-sm-end</code></li>
+                    <li><code>.align-content-sm-center</code></li>
+                    <li><code>.align-content-sm-around</code></li>
+                    <li><code>.align-content-sm-stretch</code></li>
+                    <li><code>.align-content-md-start</code></li>
+                    <li><code>.align-content-md-end</code></li>
+                    <li><code>.align-content-md-center</code></li>
+                    <li><code>.align-content-md-around</code></li>
+                    <li><code>.align-content-md-stretch</code></li>
+                    <li><code>.align-content-lg-start</code></li>
+                    <li><code>.align-content-lg-end</code></li>
+                    <li><code>.align-content-lg-center</code></li>
+                    <li><code>.align-content-lg-around</code></li>
+                    <li><code>.align-content-lg-stretch</code></li>
+                    <li><code>.align-content-xl-start</code></li>
+                    <li><code>.align-content-xl-end</code></li>
+                    <li><code>.align-content-xl-center</code></li>
+                    <li><code>.align-content-xl-around</code></li>
+                    <li><code>.align-content-xl-stretch</code></li>
+                    <li><code>.align-content-xxl-start</code></li>
+                    <li><code>.align-content-xxl-end</code></li>
+                    <li><code>.align-content-xxl-center</code></li>
+                    <li><code>.align-content-xxl-around</code></li>
+                    <li><code>.align-content-xxl-stretch</code></li>
+                </ul>
+
+                <h2>Media object</h2> 
+
+                <div class="bd-example">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999" dy=".3em">Image</text></svg>
+                    
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        This is some content from a media component. You can replace this with any content and adjust it as needed.
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"flex-shrink-0"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"flex-grow-1 ms-3"</span><span class="p">&gt;</span>
+                      This is some content from a media component. You can replace this with any content and adjust it as needed.
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>And say you want to vertically center the content next to the image:</p>
+                
+                <div class="bd-example">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999" dy=".3em">Image</text></svg>
+                    
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        This is some content from a media component. You can replace this with any content and adjust it as needed.
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-center"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"flex-shrink-0"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"flex-grow-1 ms-3"</span><span class="p">&gt;</span>
+                      This is some content from a media component. You can replace this with any content and adjust it as needed.
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-float" class="mb-5">
+
+                <h1>Float</h1>
+
+                <p class="bd-lead">Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
+
+                <div class="bd-example">
+                    <div class="float-start">Float start on all viewport sizes</div><br>
+                    <div class="float-end">Float end on all viewport sizes</div><br>
+                    <div class="float-none">Don't float on all viewport sizes</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-start"</span><span class="p">&gt;</span>Float start on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-end"</span><span class="p">&gt;</span>Float end on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-none"</span><span class="p">&gt;</span>Don't float on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Responsive</h2>
+
+                <p>Responsive variations also exist for each <code>float</code> value.</p>
+
+                <div class="bd-example">
+                    <div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+                    <div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+                    <div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+                    <div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-sm-start"</span><span class="p">&gt;</span>Float start on viewports sized SM (small) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-md-start"</span><span class="p">&gt;</span>Float start on viewports sized MD (medium) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-lg-start"</span><span class="p">&gt;</span>Float start on viewports sized LG (large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"float-xl-start"</span><span class="p">&gt;</span>Float start on viewports sized XL (extra-large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Here are all the support classes:</p>
+
+                <ul>
+                    <li><code>.float-start</code></li>
+                    <li><code>.float-end</code></li>
+                    <li><code>.float-none</code></li>
+                    <li><code>.float-sm-start</code></li>
+                    <li><code>.float-sm-end</code></li>
+                    <li><code>.float-sm-none</code></li>
+                    <li><code>.float-md-start</code></li>
+                    <li><code>.float-md-end</code></li>
+                    <li><code>.float-md-none</code></li>
+                    <li><code>.float-lg-start</code></li>
+                    <li><code>.float-lg-end</code></li>
+                    <li><code>.float-lg-none</code></li>
+                    <li><code>.float-xl-start</code></li>
+                    <li><code>.float-xl-end</code></li>
+                    <li><code>.float-xl-none</code></li>
+                    <li><code>.float-xxl-start</code></li>
+                    <li><code>.float-xxl-end</code></li>
+                    <li><code>.float-xxl-none</code></li>
+                </ul>
+
+            </section>
+
+            <section id="utilities-interactions" class="mb-4">
+
+                <h1>Interactions</h1>
+
+                <p class="bd-lead">Utility classes that change how users interact with contents of a website.</p>
+
+                <h2>Text selection</h2>
+
+                <div class="bd-example">
+                    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+                    <p class="user-select-auto">This paragraph has default select behavior.</p>
+                    <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"user-select-all"</span><span class="p">&gt;</span>This paragraph will be entirely selected when clicked by the user.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"user-select-auto"</span><span class="p">&gt;</span>This paragraph has default select behavior.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"user-select-none"</span><span class="p">&gt;</span>This paragraph will not be selectable when clicked by the user.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Pointer events</h2>
+
+                <p>Bootstrap provides <code>.pe-none</code> and <code>.pe-auto</code> classes to prevent or add element interactions.</p>
+
+                <div class="bd-example">
+                    <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+                    <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+                    <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>
+                </div>
+
+            </section>
+
+            <section id="utilities-overflow" class="mb-4">
+
+                <h1>Overflow</h1>
+
+                <p class="bd-lead">Use these shorthand utilities for quickly configuring how content overflows an element.</p>
+
+                <div class="bd-example d-md-flex">
+                    <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                      This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
+                    </div>
+                    <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                      This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
+                    </div>
+                    <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                      This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
+                    </div>
+                    <div class="overflow-scroll p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+                      This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="utilities-position" class="mb-4">
+
+                <h1>Position</h1>
+
+                <p class="bd-lead">Use these shorthand utilities for quickly configuring the position of an element.</p>
+
+                <h2>Position values</h2>
+
+                <p>Quick positioning classes are available, though they are not responsive.</p>
+
+                <div class="highlight mb-4"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-static"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-relative"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-fixed"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-sticky"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+                <h2>Arrange elements</h2>
+
+                <div class="bd-example bd-example-position-utils">
+                    <div class="position-relative">
+                      <div class="position-absolute top-0 start-0"></div>
+                      <div class="position-absolute top-0 end-0"></div>
+                      <div class="position-absolute top-50 start-50"></div>
+                      <div class="position-absolute bottom-50 end-50"></div>
+                      <div class="position-absolute bottom-0 start-0"></div>
+                      <div class="position-absolute bottom-0 end-0"></div>
+                    </div>
+                </div>
+
+                <div class="highlight mb-4"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-relative"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 end-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-50"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-50 end-50"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-0 start-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-0 end-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Center elements</h2>
+
+                <div class="bd-example bd-example-position-utils">
+                    <div class="position-relative">
+                      <div class="position-absolute top-0 start-0 translate-middle"></div>
+                      <div class="position-absolute top-0 start-50 translate-middle"></div>
+                      <div class="position-absolute top-0 start-100 translate-middle"></div>
+                      <div class="position-absolute top-50 start-0 translate-middle"></div>
+                      <div class="position-absolute top-50 start-50 translate-middle"></div>
+                      <div class="position-absolute top-50 start-100 translate-middle"></div>
+                      <div class="position-absolute top-100 start-0 translate-middle"></div>
+                      <div class="position-absolute top-100 start-50 translate-middle"></div>
+                      <div class="position-absolute top-100 start-100 translate-middle"></div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-relative"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-0 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-50 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-100 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-0 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-50 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-100 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-100 start-0 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-100 start-50 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-100 start-100 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>By adding <code>.translate-middle-x</code> or <code>.translate-middle-y</code> classes, elements can be positioned only in horizontal or vertical direction.</p>
+
+                <div class="bd-example bd-example-position-utils">
+                    <div class="position-relative">
+                      <div class="position-absolute top-0 start-0"></div>
+                      <div class="position-absolute top-0 start-50 translate-middle-x"></div>
+                      <div class="position-absolute top-0 end-0"></div>
+                      <div class="position-absolute top-50 start-0 translate-middle-y"></div>
+                      <div class="position-absolute top-50 start-50 translate-middle"></div>
+                      <div class="position-absolute top-50 end-0 translate-middle-y"></div>
+                      <div class="position-absolute bottom-0 start-0"></div>
+                      <div class="position-absolute bottom-0 start-50 translate-middle-x"></div>
+                      <div class="position-absolute bottom-0 end-0"></div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-relative"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 start-50 translate-middle-x"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-0 end-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-0 translate-middle-y"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 start-50 translate-middle"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute top-50 end-0 translate-middle-y"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-0 start-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-0 start-50 translate-middle-x"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"position-absolute bottom-0 end-0"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Examples</h2>
+
+                <div class="bd-example bd-example-position-examples d-flex justify-content-around">
+                    <button type="button" class="btn btn-primary position-relative">
+                      Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+                    </button>
+                    
+                    <button type="button" class="btn btn-dark position-relative">
+                      Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path></svg>
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary position-relative">
+                      Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+                    </button>
+                </div>
+
+                <p>You can use these classes with existing components to create new ones. Remember that you can extend its functionality by adding entries to the <code>$position-values</code> variable.</p>
+
+                <div class="bd-example bd-example-position-examples">
+                    <div class="position-relative m-4">
+                      <div class="progress" style="height: 1px;">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                      <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="utilities-shadows" class="mb-4">
+
+                <h1>Shadows</h1>
+
+                <p class="bd-lead">Add or remove shadows to elements with box-shadow utilities.</p>
+
+                <h2>Examples</h2>
+
+                <div class="bd-example">
+                    <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+                    <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+                    <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-none p-3 mb-5 bg-light rounded"</span><span class="p">&gt;</span>No shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-sm p-3 mb-5 bg-body rounded"</span><span class="p">&gt;</span>Small shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow p-3 mb-5 bg-body rounded"</span><span class="p">&gt;</span>Regular shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-lg p-3 mb-5 bg-body rounded"</span><span class="p">&gt;</span>Larger shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-sizing" class="mb-4">
+
+                <h1>Sizing</h1>
+
+                <p class="bd-lead">Easily make an element as wide or as tall with our width and height utilities.</p>
+
+                <h2>Relative to the parent</h2>
+
+                <p>Width and height utilities are generated from the utility API in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
+
+                <div class="bd-example">
+                    <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+                    <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+                    <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+                    <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+                    <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+                </div>
+
+                <div class="bd-example">
+                    <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                      <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+                      <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+                      <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+                      <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+                      <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+                    </div>
+                </div>
+
+                <p>You can also use <code>max-width: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
+
+                <div class="bd-example">
+                    <svg class="bd-placeholder-img mw-100" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Max-width 100%" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Max-width 100%</text></svg>
+                    
+                </div>
+
+                <div class="bd-example">
+                    <div style="height: 100px; background-color: rgba(255,0,0,.1);">
+                      <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,.1);">Max-height 100%</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="utilities-spacing" class="mb-4">
+
+                <h1>Spacing</h1>
+
+                <p class="bd-lead">Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+
+                <p>Where <em>property</em> is one of:</p>
+
+                <ul>
+                    <li><code>m</code> - for classes that set <code>margin</code></li>
+                    <li><code>p</code> - for classes that set <code>padding</code></li>
+                </ul>
+
+                <p>Where <em>sides</em> is one of:</p>
+
+                <ul>
+                    <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+                    <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+                    <li><code>s</code> - (start) for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+                    <li><code>e</code> - (end) for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+                    <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+                    <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+                    <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+                </ul>
+
+                <p>Where <em>size</em> is one of:</p>
+
+                <ul>
+                    <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
+                    <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>
+                    <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .5</code></li>
+                    <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer</code></li>
+                    <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 1.5</code></li>
+                    <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 3</code></li>
+                    <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+                </ul>
+
+                <h2>Horizontal centering</h2>
+
+                <div class="bd-example">
+                    <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+                      Centered element
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mx-auto"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 200px;"</span><span class="p">&gt;</span>
+                    Centered element
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h2>Negative margin</h2>
+
+                <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of <code>n</code> before the requested size. Here’s an example class that’s the opposite of <code>.mt-1</code>:</p>
+
+                <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss">
+                  <span class="nc">.mt-n1</span> <span class="p">{</span>
+                    <span class="na">margin-top</span><span class="o">:</span> <span class="o">-</span><span class="mi">0</span><span class="mf">.25</span><span class="kt">rem</span> <span class="k">!important</span><span class="p">;</span>
+                  <span class="p">}</span>
+                  </code></pre>
+                </div>
+                
+                <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss">
+                  <span class="nc">.mt-n1</span> <span class="p">{</span>
+                    <span class="na">margin-top</span><span class="o">:</span> <span class="o">-</span><span class="mi">0</span><span class="mf">.25</span><span class="kt">rem</span> <span class="k">!important</span><span class="p">;</span>
+                  <span class="p">}</span>
+                  </code></pre>
+                </div>
+
+                <h2>Gap</h2>
+
+                <p>When using <code>display: grid</code>, you can make use of <code>gap</code> utilities on the parent grid container. This can save on having to add margin utilities to individual grid items (children of a <code>display: grid</code> container). Gap utilities are responsive by default, and are generated via our utilities API, based on the <code>$spacers</code> Sass map.</p>
+
+                <div class="bd-example">
+                    <div class="d-grid gap-3">
+                      <div class="p-2 bg-light border">Grid item 1</div>
+                      <div class="p-2 bg-light border">Grid item 2</div>
+                      <div class="p-2 bg-light border">Grid item 3</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-grid gap-3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bg-light border"</span><span class="p">&gt;</span>Grid item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bg-light border"</span><span class="p">&gt;</span>Grid item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 bg-light border"</span><span class="p">&gt;</span>Grid item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-text" class="mb-4">
+
+                <h1>Text</h1>
+
+                <p class="bd-lead">Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
+
+                <h2>Text aligment</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="text-start">Start aligned text on all viewport sizes.</p>
+                    <p class="text-center">Center aligned text on all viewport sizes.</p>
+                    <p class="text-end">End aligned text on all viewport sizes.</p>
+                    
+                    <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+                    <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+                    <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+                    <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+                </div>
+
+                <h2>Text wrapping and overflow</h2>
+
+                <p>Wrap text with a <code>.text-wrap</code> class.</p>
+
+                <div class="bd-example mb-4">
+                    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                      This text should wrap.
+                    </div>
+                </div>
+
+                <p>Prevent text from wrapping with a <code>.text-nowrap</code> class.</p>
+
+                <div class="bd-example mb-4">
+                    <div class="text-nowrap bd-highlight" style="width: 8rem;">
+                      This text should overflow the parent.
+                    </div>
+                </div>
+
+                <h2>Word break</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+                </div>
+
+                <h2>Text transform</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="text-lowercase">Lowercased text.</p>
+                    <p class="text-uppercase">Uppercased text.</p>
+                    <p class="text-capitalize">CapiTaliZed text.</p>
+                </div>
+
+                <h2>Font size</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="fs-1">.fs-1 text</p>
+                    <p class="fs-2">.fs-2 text</p>
+                    <p class="fs-3">.fs-3 text</p>
+                    <p class="fs-4">.fs-4 text</p>
+                    <p class="fs-5">.fs-5 text</p>
+                    <p class="fs-6">.fs-6 text</p>
+                </div>
+
+                <h2>Font weight and italics</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="fw-bold">Bold text.</p>
+                    <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                    <p class="fw-normal">Normal weight text.</p>
+                    <p class="fw-light">Light weight text.</p>
+                    <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+                    <p class="fst-italic">Italic text.</p>
+                    <p class="fst-normal">Text with normal font style</p>
+                </div>
+
+                <h2>Line height</h2>
+
+                <div class="bd-example mb-4">
+                    <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                </div>
+
+                <h2>Monospace</h2>
+
+                <div class="bd-example">
+                    <p class="font-monospace">This is in monospace</p>
+                </div>
+
+                <h2>Reset color</h2>
+
+                <div class="bd-example">
+                    <p class="text-muted">
+                      Muted text with a <a href="#" class="text-reset">reset link</a>.
+                    </p>
+                </div>
+
+                <h2>Text decoration</h2>
+
+                <div class="bd-example">
+                    <p class="text-decoration-underline">This text has a line underneath it.</p>
+                    <p class="text-decoration-line-through">This text has a line going through it.</p>
+                    <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+                </div>
+
+            </section>
+
+            <section id="utilities-vertical-alignment" class="mb-4">
+
+                <h1>Vertical alignment</h1>
+
+                <p class="bd-lead">Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
+
+                <p>With inline elements:</p>
+
+                <div class="bd-example">
+                    <span class="align-baseline">baseline</span>
+                    <span class="align-top">top</span>
+                    <span class="align-middle">middle</span>
+                    <span class="align-bottom">bottom</span>
+                    <span class="align-text-top">text-top</span>
+                    <span class="align-text-bottom">text-bottom</span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-baseline"</span><span class="p">&gt;</span>baseline<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-top"</span><span class="p">&gt;</span>top<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-middle"</span><span class="p">&gt;</span>middle<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-bottom"</span><span class="p">&gt;</span>bottom<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-text-top"</span><span class="p">&gt;</span>text-top<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-text-bottom"</span><span class="p">&gt;</span>text-bottom<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>With table cells:</p>
+
+                <div class="bd-example">
+                    <table style="height: 100px;">
+                      <tbody>
+                        <tr>
+                          <td class="align-baseline">baseline</td>
+                          <td class="align-top">top</td>
+                          <td class="align-middle">middle</td>
+                          <td class="align-bottom">bottom</td>
+                          <td class="align-text-top">text-top</td>
+                          <td class="align-text-bottom">text-bottom</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">style</span><span class="o">=</span><span class="s">"height: 100px;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-baseline"</span><span class="p">&gt;</span>baseline<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-top"</span><span class="p">&gt;</span>top<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-middle"</span><span class="p">&gt;</span>middle<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-bottom"</span><span class="p">&gt;</span>bottom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-text-top"</span><span class="p">&gt;</span>text-top<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-text-bottom"</span><span class="p">&gt;</span>text-bottom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="utilities-visibility" class="mb-4">
+
+                <h1>Visibility</h1>
+
+                <p class="bd-lead">Control the visibility of elements, without modifying their display, with visibility utilities.</p>
+
+                <p>Apply <code>.visible</code> or <code>.invisible</code> as needed.</p>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"visible"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"invisible"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/sidebars.js"></script>
+</body>
+
+</html>

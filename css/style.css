@@ -1,0 +1,18 @@
+body{
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.content-wrapper {
+    overflow: scroll;
+}
+
+.highlight {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e5e5e5;
+}
+
+.main-menu-bootstrap{
+    overflow: auto;
+}

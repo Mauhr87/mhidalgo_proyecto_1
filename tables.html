@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto 1 - Tables</title>
+</head>
+
+<body>
+    <main>
+        <nav id="main-menu-bootstrap" class="main-menu-bootstrap flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="index.html">
+              <span class="fs-5 fw-semibold">PROJECTO 1</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#grid-breakpoints-menu" aria-expanded="false">
+                  Grid - Breakpoints
+                </button>
+                <div class="collapse" id="grid-breakpoints-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="index.html#breakpoints" class="link-dark rounded">Breakpoints</a></li>
+                    <li><a href="index.html#containers" class="link-dark rounded">Containers</a></li>
+                    <li><a href="index.html#grid" class="link-dark rounded">Grid</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#columns-gutters-menu" aria-expanded="false">
+                  Column - Gutters
+                </button>
+                <div class="collapse" id="columns-gutters-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="columns-gutters.html#columns" class="link-dark rounded">Columns</a></li>
+                    <li><a href="columns-gutters.html#gutters" class="link-dark rounded">Gutters</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#text-images-menu" aria-expanded="false">
+                  Text - Images
+                </button>
+                <div class="collapse" id="text-images-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="text-images.html#typography" class="link-dark rounded">Typography</a></li>
+                    <li><a href="text-images.html#image" class="link-dark rounded">Image</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#tables-menu" aria-expanded="true">
+                  Tables
+                </button>
+                <div class="collapse show" id="tables-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#tables" class="link-dark rounded">Tables</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-menu" aria-expanded="false">
+                  Forms
+                </button>
+                <div class="collapse" id="forms-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="forms.html#forms-overview" class="link-dark rounded">Overview</a></li>
+                    <li><a href="forms.html#forms-form-control" class="link-dark rounded">Form Control</a></li>
+                    <li><a href="forms.html#forms-select" class="link-dark rounded">Select</a></li>
+                    <li><a href="forms.html#forms-checks-radios" class="link-dark rounded">Checks & radios</a></li>
+                    <li><a href="forms.html#forms-range" class="link-dark rounded">Range</a></li>
+                    <li><a href="forms.html#forms-input-group" class="link-dark rounded">Input group</a></li>
+                    <li><a href="forms.html#forms-floating-labels" class="link-dark rounded">Floating labels</a></li>
+                    <li><a href="forms.html#forms-layout" class="link-dark rounded">Layout</a></li>
+                    <li><a href="forms.html#forms-validation" class="link-dark rounded">Validation</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-menu" aria-expanded="false">
+                  Utilities
+                </button>
+                <div class="collapse" id="utilities-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="utilities.html#utilities-background" class="link-dark rounded">Background</a></li>
+                    <li><a href="utilities.html#utilities-border" class="link-dark rounded">Border</a></li>
+                    <li><a href="utilities.html#utilities-colors" class="link-dark rounded">Colors</a></li>
+                    <li><a href="utilities.html#utilities-display" class="link-dark rounded">Display</a></li>
+                    <li><a href="utilities.html#utilities-flex" class="link-dark rounded">Flex</a></li>
+                    <li><a href="utilities.html#utilities-float" class="link-dark rounded">Float</a></li>
+                    <li><a href="utilities.html#utilities-interactions" class="link-dark rounded">Interactions</a></li>
+                    <li><a href="utilities.html#utilities-overflow" class="link-dark rounded">Overflow</a></li>
+                    <li><a href="utilities.html#utilities-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="utilities.html#utilities-shadows" class="link-dark rounded">Shadows</a></li>
+                    <li><a href="utilities.html#utilities-sizing" class="link-dark rounded">Sizing</a></li>
+                    <li><a href="utilities.html#utilities-spacing" class="link-dark rounded">Spacing</a></li>
+                    <li><a href="utilities.html#utilities-text" class="link-dark rounded">Text</a></li>
+                    <li><a href="utilities.html#utilities-vertical-alignment" class="link-dark rounded">Vertical align</a></li>
+                    <li><a href="utilities.html#utilities-visibility" class="link-dark rounded">Visibility</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-menu" aria-expanded="false">
+                  Helpers
+                </button>
+                <div class="collapse" id="helpers-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="helpers.html#helpers-clearfix" class="link-dark rounded">Clearfix</a></li>
+                    <li><a href="helpers.html#helpers-colored-links" class="link-dark rounded">Colored links</a></li>
+                    <li><a href="helpers.html#helpers-ratios" class="link-dark rounded">Ratio</a></li>
+                    <li><a href="helpers.html#helpers-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="helpers.html#helpers-visually-hidden" class="link-dark rounded">Visually hidden</a></li>
+                    <li><a href="helpers.html#helpers-stretched-link" class="link-dark rounded">Stretched link</a></li>
+                    <li><a href="helpers.html#helpers-text-truncation" class="link-dark rounded">Text truncation</a></li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#main-menu-bootstrap" data-bs-offset="0" tabindex="0"
+            class="content-wrapper p-5">
+            <section id="tables" class="mb-5">
+                <h1>Tables</h1>
+                <p class="bd-lead">Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
+
+                <h2>Overview</h2>    
+
+                <p>Due to the widespread use of <code>&lt;table&gt;</code> elements across third-party widgets like calendars and date pickers, Bootstrap’s tables are <strong>opt-in</strong>. Add the base class <code>.table</code> to any <code>&lt;table&gt;</code>, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.</p>
+
+                <p>Using the most basic table markup, here’s how <code>.table</code>-based tables look in Bootstrap.</p>
+
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>#<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>First<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Last<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Handle<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Mark<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Otto<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@mdo<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Jacob<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Thornton<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@fat<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Larry the Bird<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@twitter<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Variants</h2>
+
+                <p>Use contextual classes to color tables, table rows or individual cells.</p>
+                
+                <div class="bd-example">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Class</th>
+                          <th scope="col">Heading</th>
+                          <th scope="col">Heading</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Default</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        
+                          <tr class="table-primary">
+                            <th scope="row">Primary</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-secondary">
+                            <th scope="row">Secondary</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-success">
+                            <th scope="row">Success</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-danger">
+                            <th scope="row">Danger</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-warning">
+                            <th scope="row">Warning</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-info">
+                            <th scope="row">Info</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-light">
+                            <th scope="row">Light</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr class="table-dark">
+                            <th scope="row">Dark</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="c">&lt;!-- On tables --&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                    
+                    <span class="c">&lt;!-- On rows --&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    
+                    <span class="c">&lt;!-- On cells (`td` or `th`) --&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-primary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-secondary"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-success"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-danger"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-warning"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-info"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-dark"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Accented tables</h2>
+
+                <h3>Striped rows</h3>
+
+                <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+
+                <div class="bd-example">
+                    <table class="table table-striped">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-striped"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>These classes can also be added to table variants:</p>
+
+                <div class="bd-example">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-dark table-striped"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <table class="table table-success table-striped">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-success table-striped"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Hoverable rows</h3>
+
+                <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+
+                <div class="bd-example">
+                    <table class="table table-hover">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-hover"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-dark table-hover"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>These hoverable rows can also be combined with the striped variant:</p>
+
+                <div class="bd-example">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-striped table-hover"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Active tables</h3>
+
+                <p>Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
+
+                <div class="bd-example">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-active">
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2" class="table-active">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-active"</span><span class="p">&gt;</span>
+                        ...
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        ...
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">"2"</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-active"</span><span class="p">&gt;</span>Larry the Bird<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>@twitter<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h2>Table borders</h2>
+
+                <h3>Bordered tables</h3>
+
+                <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+
+                <div class="bd-example">
+                    <table class="table table-bordered">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-bordered"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Border color utilities can be added to change colors:</p>
+
+                <div class="bd-example">
+                    <table class="table table-bordered border-primary">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-bordered border-primary"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h3>Tables without border-radius</h3>
+
+                <p>Add <code>.table-borderless</code> for a table without borders.</p>
+
+                <div class="bd-example">
+                    <table class="table table-borderless">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-borderless"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Small tables</h2>
+
+                <p>Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
+
+                <div class="bd-example">
+                    <table class="table table-sm">
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-sm"</span><span class="p">&gt;</span>
+                    ...
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Vertical alignment</h2>
+
+                <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the the top by default. Use the <a href="/docs/5.0/utilities/vertical-align/">vertical align</a> classes to re-align where needed.</p>
+
+                <div class="bd-example">
+                    <div class="table-responsive">
+                      <table class="table align-middle">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="w-25">Heading 1</th>
+                            <th scope="col" class="w-25">Heading 2</th>
+                            <th scope="col" class="w-25">Heading 3</th>
+                            <th scope="col" class="w-25">Heading 4</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                            <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                            <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                            <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                          </tr>
+                          <tr class="align-bottom">
+                            <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                            <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                            <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                            <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                          </tr>
+                          <tr>
+                            <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                            <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                            <td class="align-top">This cell is aligned to the top.</td>
+                            <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table align-middle"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                          ...
+                        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                          ...
+                        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-bottom"</span><span class="p">&gt;</span>
+                          ...
+                        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">"align-top"</span><span class="p">&gt;</span>This cell is aligned to the top.<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h2>Anatomy</h2>
+
+                <h3>Table head</h3>
+
+                <p>Similar to tables and dark tables, use the modifier classes <code>.table-light</code> or <code>.table-dark</code> to make <code>&lt;thead&gt;</code>s appear light or dark gray.</p>
+
+                <div class="bd-example">
+                    <table class="table">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">thead</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-light"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h3>Table foot</h3>
+
+                <div class="bd-example">
+                    <table class="table">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tfoot</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">tfoot</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h3>Captions</h3>
+
+                <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
+
+                <div class="bd-example">
+                    <table class="table">
+                      <caption>List of users</caption>
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                  
+                    </table>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-sm"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>List of users<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h2>Responsive tables</h2>
+
+                <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
+
+                <h3>Always responsive</h3>
+
+                <p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
+
+                <div class="bd-example">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div>
+
+                <h3 id="breakpoint-specific">Breakpoint specific<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#breakpoint-specific" style="padding-left: 0.375em;"></a></h3>
+
+                <p>Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
+
+                <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
+
+                <div class="bd-example">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="table-responsive-sm">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="table-responsive-sm">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="table-responsive-lg">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="table-responsive-xl">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="table-responsive-xxl">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive-sm"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive-md"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive-lg"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive-xl"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"table-responsive-xxl"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table"</span><span class="p">&gt;</span>
+                      ...
+                    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/sidebars.js"></script>
+</body>
+
+</html>

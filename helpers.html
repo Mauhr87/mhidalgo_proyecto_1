@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto 1 - Helpers</title>
+</head>
+
+<body>
+    <main>
+        <nav id="main-menu-bootstrap" class="main-menu-bootstrap flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="index.html">
+                <span class="fs-5 fw-semibold">PROJECTO 1</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#grid-breakpoints-menu" aria-expanded="false">
+                  Grid - Breakpoints
+                </button>
+                <div class="collapse" id="grid-breakpoints-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="index.html#breakpoints" class="link-dark rounded">Breakpoints</a></li>
+                    <li><a href="index.html#containers" class="link-dark rounded">Containers</a></li>
+                    <li><a href="index.html#grid" class="link-dark rounded">Grid</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#columns-gutters-menu" aria-expanded="false">
+                  Column - Gutters
+                </button>
+                <div class="collapse" id="columns-gutters-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="columns-gutters.html#columns" class="link-dark rounded">Columns</a></li>
+                    <li><a href="columns-gutters.html#gutters" class="link-dark rounded">Gutters</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#text-images-menu" aria-expanded="false">
+                  Text - Images
+                </button>
+                <div class="collapse" id="text-images-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="text-images.html#typography" class="link-dark rounded">Typography</a></li>
+                    <li><a href="text-images.html#image" class="link-dark rounded">Image</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#tables-menu" aria-expanded="true">
+                  Tables
+                </button>
+                <div class="collapse show" id="tables-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="tables.html#tables" class="link-dark rounded">Tables</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-menu" aria-expanded="false">
+                  Forms
+                </button>
+                <div class="collapse" id="forms-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="forms.html#forms-overview" class="link-dark rounded">Overview</a></li>
+                    <li><a href="forms.html#forms-form-control" class="link-dark rounded">Form Control</a></li>
+                    <li><a href="forms.html#forms-select" class="link-dark rounded">Select</a></li>
+                    <li><a href="forms.html#forms-checks-radios" class="link-dark rounded">Checks & radios</a></li>
+                    <li><a href="forms.html#forms-range" class="link-dark rounded">Range</a></li>
+                    <li><a href="forms.html#forms-input-group" class="link-dark rounded">Input group</a></li>
+                    <li><a href="forms.html#forms-floating-labels" class="link-dark rounded">Floating labels</a></li>
+                    <li><a href="forms.html#forms-layout" class="link-dark rounded">Layout</a></li>
+                    <li><a href="forms.html#forms-validation" class="link-dark rounded">Validation</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-menu" aria-expanded="false">
+                  Utilities
+                </button>
+                <div class="collapse" id="utilities-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="utilities.html#utilities-background" class="link-dark rounded">Background</a></li>
+                    <li><a href="utilities.html#utilities-border" class="link-dark rounded">Border</a></li>
+                    <li><a href="utilities.html#utilities-colors" class="link-dark rounded">Colors</a></li>
+                    <li><a href="utilities.html#utilities-display" class="link-dark rounded">Display</a></li>
+                    <li><a href="utilities.html#utilities-flex" class="link-dark rounded">Flex</a></li>
+                    <li><a href="utilities.html#utilities-float" class="link-dark rounded">Float</a></li>
+                    <li><a href="utilities.html#utilities-interactions" class="link-dark rounded">Interactions</a></li>
+                    <li><a href="utilities.html#utilities-overflow" class="link-dark rounded">Overflow</a></li>
+                    <li><a href="utilities.html#utilities-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="utilities.html#utilities-shadows" class="link-dark rounded">Shadows</a></li>
+                    <li><a href="utilities.html#utilities-sizing" class="link-dark rounded">Sizing</a></li>
+                    <li><a href="utilities.html#utilities-spacing" class="link-dark rounded">Spacing</a></li>
+                    <li><a href="utilities.html#utilities-text" class="link-dark rounded">Text</a></li>
+                    <li><a href="utilities.html#utilities-vertical-alignment" class="link-dark rounded">Vertical align</a></li>
+                    <li><a href="utilities.html#utilities-visibility" class="link-dark rounded">Visibility</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-menu" aria-expanded="true">
+                  Helpers
+                </button>
+                <div class="collapse show" id="helpers-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#helpers-clearfix" class="link-dark rounded">Clearfix</a></li>
+                    <li><a href="#helpers-colored-links" class="link-dark rounded">Colored links</a></li>
+                    <li><a href="#helpers-ratios" class="link-dark rounded">Ratio</a></li>
+                    <li><a href="#helpers-position" class="link-dark rounded">Position</a></li>
+                    <li><a href="#helpers-visually-hidden" class="link-dark rounded">Visually hidden</a></li>
+                    <li><a href="#helpers-stretched-link" class="link-dark rounded">Stretched link</a></li>
+                    <li><a href="#helpers-text-truncation" class="link-dark rounded">Text truncation</a></li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#main-menu-bootstrap" data-bs-offset="0" tabindex="0"
+            class="content-wrapper p-5">
+            <section id="helpers-clearfix" class="mb-5">
+                <h1>Clearfix</h1>
+                
+                <p class="bd-lead">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
+
+                <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> <strong>to the parent element</strong>. Can also be used as a mixin.</p>
+
+                <p>Use in HTML:</p>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"clearfix"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <p>The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.</p>
+
+                <div class="bd-example">
+                    <div class="bg-info clearfix">
+                      <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+                      <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-info clearfix"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-secondary float-start"</span><span class="p">&gt;</span>Example Button floated left<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-secondary float-end"</span><span class="p">&gt;</span>Example Button floated right<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-colored-links" class="mb-5">
+
+                <h1>Colored links</h1>
+
+                <p class="bd-lead">Colored links with hover states</p>
+
+                <div class="bd-example">
+
+                    <a href="#" class="link-primary">Primary link</a>
+                    <a href="#" class="link-secondary">Secondary link</a>
+                    <a href="#" class="link-success">Success link</a>
+                    <a href="#" class="link-danger">Danger link</a>
+                    <a href="#" class="link-warning">Warning link</a>
+                    <a href="#" class="link-info">Info link</a>
+                    <a href="#" class="link-light">Light link</a>
+                    <a href="#" class="link-dark">Dark link</a>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-primary"</span><span class="p">&gt;</span>Primary link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-secondary"</span><span class="p">&gt;</span>Secondary link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-success"</span><span class="p">&gt;</span>Success link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-danger"</span><span class="p">&gt;</span>Danger link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-warning"</span><span class="p">&gt;</span>Warning link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-info"</span><span class="p">&gt;</span>Info link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-light"</span><span class="p">&gt;</span>Light link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"link-dark"</span><span class="p">&gt;</span>Dark link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-ratios" class="mb-5">
+                
+                <h1>Ratios</h1>
+
+                <p class="bd-lead">Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of the parent.</p>
+
+                <h2>Example</h2>
+
+                <p>Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector <code>.ratio &gt; *</code>.</p>
+
+                <div class="bd-example mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <h2>Aspect ratios</h2>
+
+                <p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
+
+                <div class="bd-example bd-example-ratios mb-4">
+                    <div class="ratio ratio-1x1">
+                      <div>1x1</div>
+                    </div>
+                    <div class="ratio ratio-4x3">
+                      <div>4x3</div>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                      <div>16x9</div>
+                    </div>
+                    <div class="ratio ratio-21x9">
+                      <div>21x9</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio ratio-1x1"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>1x1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio ratio-4x3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>4x3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio ratio-16x9"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>16x9<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio ratio-21x9"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>21x9<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Custom ratios</h2>
+
+                <div class="bd-example bd-example-ratios">
+                    <div class="ratio" style="--bs-aspect-ratio: 50%;">
+                      <div>2x1</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio"</span> <span class="na">style</span><span class="o">=</span><span class="s">"--bs-aspect-ratio: 50%;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>2x1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example bd-example-ratios bd-example-ratios-breakpoint">
+                    <div class="ratio ratio-4x3">
+                      <div>4x3, then 2x1</div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"ratio ratio-4x3"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>4x3, then 2x1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-position" class="mb-5">
+
+                <h1>Position</h1>
+
+                <p class="bd-lead">Use these helpers for quickly configuring the position of an element.</p>
+
+                <h2>Fixed top</h2>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"fixed-top"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <h2>Fixed bottom</h2>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"fixed-bottom"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <h2>Sticky top</h2>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"sticky-top"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code></pre>
+                </div>
+
+                <h2>Responsive sticky top</h2>
+
+                <p>Responsive variations also exist for <code>.sticky-top</code> utility.</p>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"sticky-sm-top"</span><span class="p">&gt;</span>Stick to the top on viewports sized SM (small) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"sticky-md-top"</span><span class="p">&gt;</span>Stick to the top on viewports sized MD (medium) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"sticky-lg-top"</span><span class="p">&gt;</span>Stick to the top on viewports sized LG (large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"sticky-xl-top"</span><span class="p">&gt;</span>Stick to the top on viewports sized XL (extra-large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-visually-hidden" class="mb-5">
+
+                <h1>Visually hidden</h1>
+
+                <p class="bd-lead">Use these helpers to visually hide elements but keep them accessible to assistive technologies.</p>
+
+                <div class="bd-example">
+                    <h2 class="visually-hidden">Title for screen readers</h2>
+                    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+                    <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"visually-hidden"</span><span class="p">&gt;</span>Title for screen readers<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"visually-hidden-focusable"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#content"</span><span class="p">&gt;</span>Skip to main content<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"visually-hidden-focusable"</span><span class="p">&gt;</span>A container with a <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>focusable element<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-stretched-link" class="mb-5">
+
+                <h1>Stretched link</h1>
+
+                <p class="bd-lead">Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
+
+
+                <div class="bd-example mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Card image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Card image cap</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                    
+                      <div class="card-body">
+                        <h5 class="card-title">Card with stretched link</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 18rem;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-img-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card with stretched link<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary stretched-link"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <p>Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching outside the parent element.</p>
+
+                <div class="bd-example mb-4">
+                    <div class="d-flex position-relative">
+                      <svg class="bd-placeholder-img flex-shrink-0 me-3" width="144" height="144" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic placeholder image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Generic placeholder image</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                    
+                      <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex position-relative"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"flex-shrink-0 me-3"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"mt-0"</span><span class="p">&gt;</span>Custom component with stretched link<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"stretched-link"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <div class="bd-example mb-4">
+                    <div class="row g-0 bg-light position-relative">
+                      <div class="col-md-6 mb-md-0 p-md-4">
+                        <svg class="bd-placeholder-img w-100" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic placeholder image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Generic placeholder image</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                    
+                      </div>
+                      <div class="col-md-6 p-4 ps-md-0">
+                        <h5 class="mt-0">Columns with stretched link</h5>
+                        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-0 bg-light position-relative"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-6 mb-md-0 p-md-4"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"w-100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-6 p-4 ps-md-0"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"mt-0"</span><span class="p">&gt;</span>Columns with stretched link<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"stretched-link"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+                <h2>Identifying the containing block</h2>
+
+                <p>If the stretched link doesn’t seem to work, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block">containing block</a> will probably be the cause. The following CSS properties will make an element the containing block:</p>
+
+                <ul>
+                    <li>A <code>position</code> value other than <code>static</code></li>
+                    <li>A <code>transform</code> or <code>perspective</code> value other than <code>none</code></li>
+                    <li>A <code>will-change</code> value of <code>transform</code> or <code>perspective</code></li>
+                    <li>A <code>filter</code> value other than <code>none</code> or a <code>will-change</code> value of <code>filter</code> (only works on Firefox)</li>
+                </ul>
+
+                <div class="bd-example">
+                    <div class="card" style="width: 18rem;">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Card image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Card image cap</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                    
+                      <div class="card-body">
+                        <h5 class="card-title">Card with stretched links</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                          <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
+                        </p>
+                        <p class="card-text bg-light" style="transform: rotate(0);">
+                          This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 18rem;"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-img-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card with stretched links<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"stretched-link text-danger"</span> <span class="na">style</span><span class="o">=</span><span class="s">"position: relative;"</span><span class="p">&gt;</span>Stretched link will not work here, because <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>position: relative<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> is added to the link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text bg-light"</span> <span class="na">style</span><span class="o">=</span><span class="s">"transform: rotate(0);"</span><span class="p">&gt;</span>
+                        This <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-warning stretched-link"</span><span class="p">&gt;</span>stretched link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> will only be spread over the <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>p<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>-tag, because a transform is applied to it.
+                      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+            <section id="helpers-text-truncation" class="mb-5">
+
+                <h1>Text truncation</h1>
+
+                <p class="bd-lead">Truncate long strings of text with an ellipsis.</p>
+
+                <div class="bd-example">
+                    <!-- Block level -->
+                    <div class="row">
+                      <div class="col-2 text-truncate">
+                        Praeterea iter est quasdam res quas ex communi.
+                      </div>
+                    </div>
+                    
+                    <!-- Inline level -->
+                    <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                      Praeterea iter est quasdam res quas ex communi.
+                    </span>
+                </div>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">
+                    <span class="c">&lt;!-- Block level --&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+                      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-2 text-truncate"</span><span class="p">&gt;</span>
+                        Praeterea iter est quasdam res quas ex communi.
+                      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    
+                    <span class="c">&lt;!-- Inline level --&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-inline-block text-truncate"</span> <span class="na">style</span><span class="o">=</span><span class="s">"max-width: 150px;"</span><span class="p">&gt;</span>
+                      Praeterea iter est quasdam res quas ex communi.
+                    <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/sidebars.js"></script>
+</body>
+
+</html>
